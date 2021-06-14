@@ -1,6 +1,6 @@
 const express = require("express")
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/contactDance', {useNewUrlParser: true, useUnifiedTopology: true});
                                     // Database name                              
 
 
