@@ -1,0 +1,26 @@
+#contact{
+    
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 13px 3px;
+    margin : 0px 0px 171px 0px;
+    
+}
+
+#contact h1{
+    font-weight: bold;
+}
+
+#contact form{
+    display:flex;
+    flex-direction: column;
+}
+
+#contact form input{
+    width: 541px;
+    padding: 9px;
+    margin: 8px;
+    border-radius: 11px;
+    outline : none;
+}

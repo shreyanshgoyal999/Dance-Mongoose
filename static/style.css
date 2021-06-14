@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    margin : 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Section */
+header{
+    display : flex;
+    background-color: rgb(201, 35, 35);
+    color : white;
+    padding : 5.5px;
+}
+
+#navlogo{
+    display: flex;
+    align-items: center;
+    margin: 0px 13px;
+}
+
+#navlist{
+    display: flex;
+}
+
+#navlist li{
+    list-style: none;
+    margin: 6px 27px;
+}
+
+#navlist li a{
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
+/* Home Section*/
+#home::before{
+    content:"";
+    background:url("/static/homeBackground.jpg") no-repeat center  ;
+    width : 100%;
+    height: 71vh;
+    z-index: -1;
+    top:0;
+    left:0;
+    position: absolute;
+}
+#home{
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    height: 63vh;
+    font-size: 1.9rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Services Section*/
+#mission{
+    position: relative;
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 24px 0px;
+    
+    
+}
+
+#mission h1{
+    font-size:  2rem;
+}
+
+.missionContainer{
+    display: flex;
+    margin: 16px 0px;
+}
+.boxCard{
+    margin: 7px 0px;
+    padding: 29px 2px;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0px;
+    font-size: 1rem;
+    
+
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border : 2px solid black;
+    margin : 0px 10px;
+    padding: 11px 5px;
+    max-width : 300px;
+    border-radius : 22px;
+}
+
+.boxCard img{
+    width: 75px;
+    height: 100px;
+    margin: 0px 20px;
+}
+
+
+#footer{
+    display:flex;
+    color:white;
+    background-color: black;
+    height: 34px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Sponsors Section */
+
+#sponsors{
+    display:flex;
+    flex-direction:column;
+    background-color: burlywood;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+   
+    padding: 19px 10px;
+}
+
+#sponsors h1{
+    font-size:  2rem;
+}
+
+#sponsorsContainer{
+    display:flex;
+    margin: 20px 0px;
+}
+
+#sponsorsContainer img{
+    width:100px;
+    height : 100px;
+    
+    margin: 13px 62px;
+}
