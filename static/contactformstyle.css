@@ -15,12 +15,14 @@
 #contact form{
     display:flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #contact form input{
-    width: 541px;
+    width: 54vw;
     padding: 9px;
     margin: 8px;
     border-radius: 11px;
     outline : none;
 }
+
