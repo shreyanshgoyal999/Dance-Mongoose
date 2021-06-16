@@ -108,7 +108,7 @@ header{
     margin: 0px 20px;
 }
 
-
+/* Footer */
 #footer{
     display:flex;
     color:white;
@@ -116,6 +116,8 @@ header{
     height: 34px;
     align-items: center;
     justify-content: center;
+    
+    
 }
 
 /* Sponsors Section */
@@ -145,4 +147,8 @@ header{
     height : 100px;
     
     margin: 13px 30px;
+}
+
+.btn{
+    padding: 4px;
 }

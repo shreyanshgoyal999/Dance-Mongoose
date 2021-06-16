@@ -4,13 +4,17 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
+        title GDA Dance Academy
         block style
 
         style 
             include ../static/style.css
+
+        //- linking css file using media query, to make website responsive.    
         link(href="../static/phone.css", rel="stylesheet" , media="screen and (max-width:656px)")    
+        
     body 
+        //- Header Navbar
         header
             div(id="navlogo")
                 img(src="/static/logo.png", alt="not loaded", width="50px",height="30px")
@@ -19,14 +23,15 @@ html(lang="en")
                 li 
                     a(href="/") Home
                 li 
-                    a(href="/") Services
+                    a(href="#mission") Services
                 li 
-                    a(href="/") About
+                    a(href="#sponsors") About
                 li 
                     a(href="/contact") Contact
 
         block content  
 
+        //- Footer
         footer#footer 
             | Copyright © 2021 @Saryansh | All rights are reserved          
 

@@ -1,19 +1,50 @@
-extends base.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title GDA Contact Form
+        
 
-block style 
-    style 
-        include ../static/contactformstyle.css
+        style 
+            include ../static/style.css
+            include ../static/contactformstyle.css
 
-block content 
-    section(id="contact")
-        h1 
-            |Contact Us
-        form(action="/contact" method="POST" )
-            input(type="text",id="name" name="name" placeholder="Enter Your Name" )
-            input(type="phone",id="phone" name="phone" placeholder="Enter Your phone number" )
-            input(type="email",id="email" name="email" placeholder="Enter Your email" )
-            input(type="text",id="address" name="address" placeholder="Enter Your address" )
-            input(type="text",id="concern" name="concern" placeholder="Enter Your concern" )
-            input(type="submit",placeholder="Submit" )
+        //- linking css file using media query, to make website responsive.    
+        link(href="../static/phone.css", rel="stylesheet" , media="screen and (max-width:656px)")
+
+    body 
+        //- Header of Contact page
+        header
+            div(id="navlogo")
+                img(src="/static/logo.png", alt="not loaded", width="50px",height="30px")
+                |GDA
+            ul(id="navlist")  
+                li 
+                    a(href="/") Home
+                li 
+                    a(href="/") Services
+                li 
+                    a(href="/") About
+                li 
+                    a(href="/contact") Contact
+
+        //- Contact form of contact page
+        section(id="contact")
+            h1 
+                |Contact Us
+            form(action="/contact" method="POST" )
+                input(type="text",id="name" name="name" placeholder="Enter Your Name" )
+                input(type="phone",id="phone" name="phone" placeholder="Enter Your phone number" )
+                input(type="email",id="email" name="email" placeholder="Enter Your email" )
+                input(type="text",id="address" name="address" placeholder="Enter Your address" )
+                input(type="text",id="concern" name="concern" placeholder="Enter Your concern" )
+                button(type="submit" class="btn")
+                    | Submit
+
+        //- Footer of Contact Page
+        footer#footer 
+            | Copyright © 2021 @Saryansh | All rights are reserved          
 
             

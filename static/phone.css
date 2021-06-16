@@ -3,28 +3,32 @@
     margin:0px;
 }
 
-#navlist li{
-    margin: 6px 10px;
-}
-
-#home{
-    font-size: 1rem;
-}
-
+/* Navbar/Header */
 header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+#navlist li{
+    margin: 6px 10px;
+}
 
 
+
+/* Home Section */
+#home{
+    font-size: 1rem;
+}
+
+/* Services section */
 .missionContainer{
     flex-wrap:wrap;
     justify-content:center;
     align-items: center;
 }
 
+/* Sponsors Section */
 #sponsors{
     padding: 0px;
 }
@@ -38,7 +42,12 @@ header{
    
 }
 
-
+/* Contact section */
 #contact form input{
     width : 80vw;
+}
+
+/* Footer */
+#footer{
+    font-size: 0.9em;
 }
