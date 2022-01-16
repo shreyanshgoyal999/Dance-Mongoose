@@ -32,7 +32,17 @@ header{
     color: white;
     text-decoration: none;
     padding: 4px;
+    border-radius: 5px;
 }
+
+#navlist li a:hover{
+    /* background-color: black; */
+    color: black
+}
+#navlist li a:active{
+    background-color: white;
+}
+
 
 /* Home Section*/
 #home::before{

@@ -36,5 +36,6 @@
     background-color: rgb(201, 35, 35);
     font-size: 1rem;
     width : 100px;
+    outline : none;
 }
 
