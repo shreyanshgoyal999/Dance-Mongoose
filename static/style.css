@@ -3,6 +3,7 @@
     margin : 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /* Navbar Section */
@@ -33,12 +34,16 @@ header{
     text-decoration: none;
     padding: 4px;
     border-radius: 5px;
+    outline:none;
 }
 
 #navlist li a:hover{
-    /* background-color: black; */
-    color: black
+    color: black;
+    
 }
+
+
+
 
 
 /* Home Section*/
